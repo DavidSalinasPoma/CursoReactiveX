@@ -1,7 +1,10 @@
 
+// Todo lo que viene de rxjs es para crear Observables
 import { Observable, Observer } from 'rxjs';
 
-// El observer es una interfas
+
+
+// El OBSERVER es una interfas
 // obliga a hacer todo lo que se necesita para que ese observer sea valido
 const observer: Observer<any> = {
     next: value => console.log('Siguiente [next]', value),
@@ -10,7 +13,7 @@ const observer: Observer<any> = {
 
 }
 
-// Es para crear un Observable
+// Es para crear un Observable es una instruccion poco comun
 // const obs$ = Observable.create();
 
 // Esta definicion de observables permite crear suscripciones
@@ -44,6 +47,8 @@ const obs$ = new Observable<string>(subs => {
 //     error => console.warn('error', error),
 //     () => console.info('Completado')
 // );
+
+// 3 es lo mismo que 4
 
 //4.- obs$.subscribe(
 //     resp => {
